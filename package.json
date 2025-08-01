@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test":"node test.js",
-    "start": "node index.js",
+    "dist":"npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
     "prepare": "husky"
   },
   "author": "Tanishk",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^24.1.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.2"
+    "lint-staged": "^16.1.2",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
   }
 }
